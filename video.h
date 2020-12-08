@@ -5,7 +5,7 @@
 /**
 * La classe de vidéo
 */
-class Video: public Multimedia
+class Video : public Multimedia
 {
 private:
 	double m_duration; /** La durée de la vidéo */
