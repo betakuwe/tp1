@@ -11,6 +11,12 @@ private:
 	double m_duration; /** La durée de la vidéo */
 
 public:
+	/** Constructeurs */
+	Video(std::string filetype, std::string filename, double duration);
+
+	/** Destructeur */
+	~Video();
+
 	/** Accesseurs */
 	double getDuration() const;
 

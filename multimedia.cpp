@@ -6,6 +6,7 @@ Multimedia::Multimedia(std::string filetype, std::string filename)
 }
 
 Multimedia::Multimedia()
+	: m_filetype{"filetype"}, m_filename{"filename"}
 {
 }
 
