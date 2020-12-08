@@ -12,6 +12,15 @@ private:
 	double m_height; /** La longtitude */
 
 public:
+	/** Constructeurs */
+	Photo(std::string filetype, 
+		std::string filename, 
+		double width, 
+		double height);
+
+	/** Destructeur */
+	~Photo();
+
 	/** Accesseurs */
 	double getWidth() const;
 	double getHeight() const;
