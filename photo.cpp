@@ -2,8 +2,8 @@
 
 Photo::Photo(std::string filetype, 
     std::string filename, 
-    double width, 
-    double height)
+    double width = 0, 
+    double height = 0)
     : Multimedia{filetype, filename}, m_width{width}, m_height{height}
 {
 }
@@ -30,4 +30,13 @@ void Photo::setWidth(const double width)
 void Photo::setHeight(const double height)
 {
     m_height = height;
+}
+
+std::ostream& operator<<(std::ostream& out, const Photo& photo)
+{
+    out << "Photo(" << photo.getFilename() << "."
+        << photo.getFiletype() << ", "
+        << photo.getWidth() << ", "
+        << photo.getHeight() << ")";
+    return out;
 }

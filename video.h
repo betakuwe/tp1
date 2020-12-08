@@ -23,3 +23,6 @@ public:
 	/** Modifieurs */
 	void setDuration(const double duration);
 };
+
+/** Méthode d'affichage */
+std::ostream& operator<< (std::ostream& out, const Video& video);

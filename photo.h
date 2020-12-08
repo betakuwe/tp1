@@ -29,3 +29,6 @@ public:
 	void setWidth(const double width);
 	void setHeight(const double height);
 };
+
+/** Méthode d'affichage */
+std::ostream& operator<< (std::ostream& out, const Photo& photo);
