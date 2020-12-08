@@ -1,6 +1,7 @@
 #include "MyClass.h"
 
-MyClass::MyClass(std::string filetype, std::string filename) : m_filetype{filetype}, m_filename{filename}
+MyClass::MyClass(std::string filetype, std::string filename) 
+	: m_filetype{filetype}, m_filename{filename}
 {
 }
 
@@ -34,6 +35,7 @@ void MyClass::setFilename(const std::string filename)
 
 std::ostream& operator<<(std::ostream& out, const MyClass& myclass)
 {
-	out << "MyClass(" << myclass.getFilename() << "." << myclass.getFiletype() << ")";
+	out << "MyClass(" << myclass.getFilename() << "." 
+		<< myclass.getFiletype() << ")";
 	return out;
 }
