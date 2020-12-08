@@ -6,7 +6,7 @@
 /**
 *	La classe de base.
 */
-class MyClass
+class Multimedia
 {
 private:
 	std::string m_filetype; /** Objet multimédia */
@@ -14,11 +14,11 @@ private:
 
 public:
 	/** Constructeurs */
-	MyClass(std::string filetype, std::string filename); 
-	MyClass();
+	Multimedia(std::string filetype, std::string filename); 
+	Multimedia();
 
 	/** Destructeur */
-	~MyClass();
+	~Multimedia();
 
 	/** Accesseurs */
 	std::string getFiletype() const;
@@ -30,4 +30,4 @@ public:
 };
 
 /** Méthode d'affichage */
-std::ostream& operator<< (std::ostream& out, const MyClass& myclass);
+std::ostream& operator<< (std::ostream& out, const Multimedia& myclass);

@@ -4,14 +4,14 @@
 //
 
 #include <iostream>
-#include "MyClass.h"
+#include "multimedia.h"
 using namespace std;
 
 int main(int argc, const char* argv[])
 {
     std::cout << "Hello brave new world" << std::endl;
 
-    MyClass *myclass = new MyClass("jpg", "myfile");
+    Multimedia *myclass = new Multimedia("jpg", "myfile");
     std::cout << *myclass << std::endl;
 
     return 0;
